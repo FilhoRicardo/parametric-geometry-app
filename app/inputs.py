@@ -152,18 +152,7 @@ def display_model_geometry():
     st.session_state.hb_json_path = st.session_state.temp_folder.joinpath(f"{st.session_state.hb_model.identifier}.hbjson")
     st.session_state.hb_json_path.write_text(json.dumps(st.session_state.hb_model.to_dict()))
     web.show_model(st.session_state.hb_json_path)
-
-'''def display_model_geometry():
-    #requirements to display a model:
-        #1. Have a temporary folder
-        #2. 
-    container1 = st.container()
-    
-    with container1:
-        hb_json_path = st.session_state.temp_folder.joinpath(f"{st.session_state.hb_model.identifier}.hbjson")
-        hb_json_path.write_text(json.dumps(st.session_state.hb_model.to_dict()))
-        web.show_model(hb_json_path)'''
-    
+   
 def parameters_changed():
     """Check if the building parameters have changed."""
     keys = ['footprint', 'no_of_floors', 'floor_height', 'wwr']
