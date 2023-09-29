@@ -154,7 +154,9 @@ def display_model_geometry():
     web.show_model(st.session_state.hb_json_path)
    
 def parameters_changed():
-    """Check if the building parameters have changed from previous version."""
+    """Check if the building parameters have changed from previous version.
+        parameter name: 
+    """
     keys = ['footprint', 'no_of_floors', 'floor_height', 'wwr']
     for key in keys:
         if key + "_old" not in st.session_state:
