@@ -11,6 +11,7 @@ to visualize the model.
 import streamlit as st
 from pathlib import Path
 import tempfile
+import json
 
 # Import local modules for handling inputs and web visualization
 from inputs import (parameters_changed, initialize, geometry_parameters, 
@@ -57,6 +58,13 @@ def main():
         # Reset the Honeybee model path and create a new temporary folder
         st.session_state.hb_json_path = None
         st.session_state.temp_folder = Path(tempfile.mkdtemp())
+
+    if st.session_state.hb_model:
+        st.text("Download model as HB Json file")
+        # To download the model we need to convert the object into a string - this is called serialization
+        json_string = json.dumps(st.session_state.hb_model.to_dict())
+        st.download_button(label="Download HB Json",data=json_string,file_name="parametricModel.json",mime="application/json")
+        
 
 if __name__ == "__main__":
     # Run the main function if this module is executed as the main script
