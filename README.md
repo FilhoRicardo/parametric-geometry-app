@@ -12,9 +12,12 @@ User Input: Define your building parameters through an intuitive interface.
 Building Generation: Our algorithms craft a 3D model based on your inputs.
 3D Visualization: Visualize your design in rich 3D, powered by VTK.
 # Getting Started 🚀
-Install the required libraries.
-Run app.py to launch the Streamlit application.
-Start designing!
+- Make sure you have Python `3.7` or a more recent version.
+- Optionally, create a python virtual environment.
+- Install the required libraries. `pip install -r requirements.txt`
+- To launch the Streamlit application use `streamlit run app\app.py`
+- Start playing!
+
 # Contributing 🤝
 Feel free to fork, improve, make pull requests or fill issues. I'd love to hear your feedback!
 
