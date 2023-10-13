@@ -1,5 +1,5 @@
 # Parametric Geometry App 🏙️
-Dive into the world of parametric design with the Parametric Geometry App! Harness the power of Streamlit and dynamic 3D visualizations to craft your ideal building, all based on a few simple parameters.
+Dive into the world of parametric design with the Parametric Geometry App! Harness the power of [Ladybug tools](https://www.ladybug.tools/) and [Streamlit](https://streamlit.io/) to quickly craft your ideal building, all based on a few simple parameters.
 
 <img src="docs\img\gif_demo.gif">
 
